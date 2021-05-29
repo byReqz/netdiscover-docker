@@ -9,4 +9,5 @@ fi
 if [[ -z "$title" ]];then
 	title=netdiscover-docker
 fi
-./gotty -p "$port" $creds --title-format "$title" netdiscover
+
+./gotty -p "$port" $creds --title-format "$title" tmux new-session -A -s netdiscover netdiscover
