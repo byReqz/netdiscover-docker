@@ -5,7 +5,7 @@ currently supported (optional) arguments are:
 - port // specifies the port (def. 8080)
 - userpass // sets http basic auth - ex. user:pass (def. none)
 - title // sets tab title (def. netdiscover-docker)
-
+- passive // only listen but dont send requests
 
 # docker compose
 ```yaml
@@ -21,6 +21,7 @@ services:
 #     - port=1234
 #     - userpass=user:pass
 #     - title=1234
+#     - passive=true
 ```
 
 # credits
