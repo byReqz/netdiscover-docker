@@ -7,6 +7,9 @@ currently supported (optional) arguments are:
 - title // sets tab title (def. netdiscover-docker)
 - passive // only listen but dont send requests
 
+# note
+if you intend on permanently running the container, i would recommend using the passive option, as most consumer switches will fill their arp cache very quickly
+
 # docker compose
 ```yaml
 version: '2.3'
