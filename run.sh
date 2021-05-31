@@ -9,5 +9,8 @@ fi
 if [[ -z "$title" ]];then
 	title=netdiscover-docker
 fi
+if [[ "$passive" == "true" ]];then
+	passivearg="-p"
+fi
 
-./gotty -p "$port" $creds --title-format "$title" tmux new-session -A -s netdiscover netdiscover
+./gotty -p "$port" $creds --title-format "$title" tmux new-session -A -s netdiscover netdiscover $passivearg

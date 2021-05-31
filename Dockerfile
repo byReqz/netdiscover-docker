@@ -8,5 +8,4 @@ RUN tar xvfz gotty_linux_amd64.tar.gz
 ENV TERM=xterm
 COPY run.sh ./run.sh
 RUN chmod +x ./run.sh
-RUN tmux new-session -d -A -s netdiscover netdiscover
 ENTRYPOINT ["/run.sh"]
